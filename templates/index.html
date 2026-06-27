@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block title %}Home | Software Engineer Portfolio{% endblock %}
+
+{% block content %}
+<section class="hero-section">
+  <div class="hero-copy animate-up">
+    <p class="eyebrow">Software Engineer</p>
+    <h1>Hi, I’m Alex Morgan.</h1>
+    <p class="hero-text">
+      I build scalable web applications, API services, and polished developer experiences.
+      I help teams ship high-quality products faster through clean code and thoughtful design.
+    </p>
+    <div class="hero-actions">
+      <a class="button primary" href="{{ url_for('projects') }}">View Projects</a>
+      <a class="button secondary" href="{{ url_for('contact') }}">Contact Me</a>
+    </div>
+  </div>
+  <div class="hero-aside animate-up delay-1">
+    <div class="hero-card">
+      <span class="hero-label">Core strengths</span>
+      <ul>
+        <li>Backend APIs</li>
+        <li>System design</li>
+        <li>Automation</li>
+        <li>Team leadership</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="overview-grid">
+  <article class="feature-card animate-up delay-2">
+    <h2>Modern interfaces</h2>
+    <p>Designing intuitive dashboards, developer tools, and documentation pages with responsive layout.</p>
+  </article>
+  <article class="feature-card animate-up delay-3">
+    <h2>Reliable backends</h2>
+    <p>Building RESTful services, processing pipelines, and integrations for production-ready applications.</p>
+  </article>
+  <article class="feature-card animate-up delay-4">
+    <h2>Developer experience</h2>
+    <p>Delivering clean code, reusable patterns, and tooling that helps engineering teams move confidently.</p>
+  </article>
+</section>
+
+<section class="stats-panel animate-up delay-5">
+  <div>
+    <h3>6+</h3>
+    <p>Professional projects</p>
+  </div>
+  <div>
+    <h3>5+</h3>
+    <p>Years experience</p>
+  </div>
+  <div>
+    <h3>30+</h3>
+    <p>APIs & services delivered</p>
+  </div>
+</section>
+{% endblock %}

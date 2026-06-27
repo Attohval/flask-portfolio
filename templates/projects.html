@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Projects | Software Engineer Portfolio{% endblock %}
+
+{% block content %}
+<section class="page-section animate-up">
+  <div class="section-header">
+    <p class="eyebrow">Projects</p>
+    <h2>Selected work</h2>
+  </div>
+  <div class="projects-grid">
+    {% for project in projects %}
+    <article class="project-card animate-up delay-{{ loop.index }}">
+      <div>
+        <h3>{{ project.title }}</h3>
+        <p>{{ project.description }}</p>
+      </div>
+      <div class="project-meta">
+        <span>{{ project.tech | join(', ') }}</span>
+        <a href="{{ project.github }}" target="_blank" rel="noreferrer">View repo</a>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

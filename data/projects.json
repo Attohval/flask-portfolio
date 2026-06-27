@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Developer Dashboard",
+    "description": "A responsive analytics dashboard for tracking development metrics, CI status, and release health.",
+    "tech": ["Python", "Flask", "HTML", "CSS", "JavaScript"],
+    "github": "https://github.com/username/dev-dashboard"
+  },
+  {
+    "title": "API Integration Layer",
+    "description": "A clean REST API service that aggregates third-party data and provides consistent responses for web clients.",
+    "tech": ["Flask", "SQLAlchemy", "PostgreSQL", "Docker"],
+    "github": "https://github.com/username/api-integration"
+  },
+  {
+    "title": "Task Planner App",
+    "description": "A task management tool with calendar views, prioritization, and activity tracking for small engineering teams.",
+    "tech": ["JavaScript", "CSS Grid", "Python", "Flask"],
+    "github": "https://github.com/username/task-planner"
+  },
+  {
+    "title": "Portfolio Site Redesign",
+    "description": "A modern portfolio website built with custom HTML, CSS, and JavaScript to highlight projects and experience.",
+    "tech": ["HTML5", "CSS3", "JavaScript", "Flask"],
+    "github": "https://github.com/username/portfolio-redesign"
+  },
+  {
+    "title": "Code Review Assistant",
+    "description": "A lightweight app that helps teams track code review status, review notes, and team contributions.",
+    "tech": ["Python", "Flask", "SQLite", "AJAX"],
+    "github": "https://github.com/username/code-review-assistant"
+  },
+  {
+    "title": "Microservice Prototype",
+    "description": "A prototype for a scalable microservice with job queuing, health checks, and metrics reporting.",
+    "tech": ["Python", "Flask", "Redis", "Docker"],
+    "github": "https://github.com/username/microservice-prototype"
+  }
+]
