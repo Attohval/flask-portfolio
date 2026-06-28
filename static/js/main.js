@@ -11,7 +11,8 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   navLinks.forEach((link) => {
-    if (link.href === window.location.href) {
+    const href = link.getAttribute("href");
+    if (href && window.location.pathname === href) {
       link.classList.add("active");
     }
 
@@ -23,6 +24,21 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+
+  const revealElements = document.querySelectorAll(".animate-up");
+  const revealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.16 }
+  );
+
+  revealElements.forEach((element) => revealObserver.observe(element));
 
   if (window.location.hash) {
     const element = document.querySelector(window.location.hash);

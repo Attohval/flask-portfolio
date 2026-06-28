@@ -45,8 +45,28 @@
       </main>
 
       <footer class="site-footer">
-        <p>Built with Flask, HTML, CSS, and vanilla JavaScript.</p>
-        <p>&copy; {{ current_year }} Software Engineer Portfolio</p>
+        <div class="footer-content">
+          <div class="footer-brand">
+            <div class="logo footer-logo"><b>Valentine</b></div>
+            <p>Building thoughtful digital products with dependable engineering and design-led experiences.</p>
+          </div>
+          <div class="footer-links">
+            <h3>Explore</h3>
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('about') }}">About</a>
+            <a href="{{ url_for('projects') }}">Projects</a>
+          </div>
+          <div class="footer-links">
+            <h3>Connect</h3>
+            <a href="mailto:attohval@gmail.com">attohval@gmail.com</a>
+            <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>Built with Flask, HTML, CSS, and vanilla JavaScript.</p>
+          <p>&copy; {{ current_year }} Valentine Attoh. All rights reserved.</p>
+        </div>
       </footer>
     </div>
 
